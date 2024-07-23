@@ -1,0 +1,15 @@
+{
+  "name": "keycloak-demo",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "keycloak-js": "^25.0.2"
+  }
+}
