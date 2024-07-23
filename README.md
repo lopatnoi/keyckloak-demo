@@ -14,36 +14,15 @@ The application then invokes Keycloak for ID token, Access token and Refresh tok
 6. Retrieve tokens
 7. Authenticated
 
-## Run Keycloak server locally on Docker
+## Running application locally
 
-- Install Docker if not yet installed on your local machine
-- Run Keycloak image v.25.0.1 in dev mode
+* [Run Keycloak Server](./keycloak#run-keycloak-server-locally-on-docker)
+* [Configure Keycloak Server](./keycloak#configure-keycloak)
+
+Install dependencies from `package.json`
 ```shell
-docker run -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin -p 8080:8080 quay.io/keycloak/keycloak:25.0.1 start-dev
+npm install
 ```
-- Login on http://localhost:8080/admin as `admin` with pass `admin`
-
-## Configure Keycloak
-
-#### Creating and configuring realm and client:
-
-- Click on the realm selector to see a list of realms, including a button to create a new realm.
-- Click on the `Create realm` button.
-- Drug a file `realm-export.json` from project parent directory as Resource file and create prepared realm.
-
-#### Creating a User
-
-- From the left-hand menu, click on `Users`, and then click on `Create new user` button.
-- Use name `alice` as Username.
-- Optionally add an Email (a@t.c), First Name (Alice) and Last Name (Cooper).
-- Click button `Create` to complete the form.
-
-Create password for user
-- Click on `Credentials` tab and in this tab `Set password`.
-- Enter password you want, optionally turn-off `Temporary` and click `Save` button to complete the form.
-- Click `Save Password` on confirmation form.
-
-## Running application
 
 Build and run application with Parcel
 ```shell
