@@ -5,13 +5,31 @@
   <meta charset="utf-8">
   <title>Keycloak Demo</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <script type="module" src="./app.js" defer></script>
+  <script type="module" defer src="./index.js"></script>
 </head>
 
 <body>
   <header>
     <button id="login-btn">Login</button>
   </header>
+
+  <div id="token-info">
+    <button id="token-btn">Token</button>
+    <button id="access-token-btn">Access Token</button>
+    <button id="refresh-token-btn">Refresh Token</button>
+
+    <button id="refresh-btn">Refresh</button>
+    <button id="logout-btn">Logout</button>
+
+    <h2 id="name"></h2>
+  </div>
+
+  <div id="output">
+    <div id="token-output"></div>
+    <div id="parse-token-output">
+      <pre></pre>
+    </div>
+  </div>
 </body>
 
 </html>
