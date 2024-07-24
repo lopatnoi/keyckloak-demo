@@ -61,17 +61,16 @@ div button {
 }
 
 #token-output{
-  width: 40%;
+  width: 50%;
   overflow-wrap: break-word;
   padding: 1rem;
   margin: 0 1rem;
   border: 1px solid black;
   border-radius: 3px;
-  /*font-size: 14px;*/
 }
 
 #parse-token-output {
-  width: 60%;
+  width: 50%;
   padding: 1rem;
   margin: 0 1rem;
   border: 1px solid black;
